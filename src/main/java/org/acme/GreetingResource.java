@@ -21,7 +21,7 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Uni<List<Fruit>> getFruits() throws InterruptedException {
-        Thread.sleep(5000);
+       // Thread.sleep(5000);
         return Fruit.listAll();
     }
 }
